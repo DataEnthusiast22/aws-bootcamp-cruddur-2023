@@ -36,3 +36,16 @@ tasks:
       '''
       
 -- pushed changes made in gitpod to github public repo using git add, git commit and git push
+
+
+## Create a budget
+Created a zero spend budget using the billing management console
+
+![Screenshot_6](https://user-images.githubusercontent.com/113455719/219872831-62404594-9007-4043-b904-0d768a08317c.png)
+
+## Create a billing alarm
+First created a SNS topic and used the topicARN to set up the billing alarm
+
+![Screenshot_7](https://user-images.githubusercontent.com/113455719/219873233-1e854baf-38dd-4c9e-b7c7-fcc380487939.png)
+
+
