@@ -25,17 +25,14 @@ I blacked out part of the secret_access_key & access_key_id for security reasons
 '''
 tasks:
   - name: aws-cli
-    env: 
-     AWS_CLI_AUTO_PROMPT: on-partial
-    init:
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    init: |
       cd /workspace
       curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-      unzip awscliv2.zip"
+      unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
       '''
       
--- pushed changes made in gitpod to github public repo using 
-git add .
-git commit -m
-git push
+-- pushed changes made in gitpod to github public repo using git add, git commit and git push
