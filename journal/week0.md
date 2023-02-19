@@ -1,5 +1,10 @@
 # Week 0 — Billing and Architecture
 
+## Logical Architecture Diagram
+I recreated the logical architecture diagram using lucid charts
+
+![Cruddur Architectural Diagram](https://user-images.githubusercontent.com/113455719/219932410-ef797b62-00c3-42b5-866e-e7afb2b30a28.png)
+
 ## Install AWS cli
 I downloaded and installed AWS cli on gitpod terminal using curl, unzip & sudo
 ![Screenshot_1](https://user-images.githubusercontent.com/113455719/219851861-ce808680-6d8a-4851-9cae-f94e03f8fb32.png)
