@@ -75,5 +75,7 @@ different frontend and backend applications simply by changing the values of the
 having to modify the application code.
 
 made the port public by unlocking the port in the ports tab
+
 Note: CTRL+C is used to stop the server after its been spun up.
+
 add /api/activities/home to your URL to see results
