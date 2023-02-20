@@ -30,7 +30,7 @@ I blacked out part of the secret_access_key & access_key_id for security reasons
 
 -- updated .gitpod.yml with the code below 
 
-'''sh
+```sh
 tasks:
   - name: aws-cli
     env:
@@ -41,7 +41,7 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
-      '''
+      ```
       
 -- pushed changes made in gitpod to github public repo using git add, git commit and git push
 
