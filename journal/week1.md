@@ -1,5 +1,7 @@
 # Week 1 — App Containerization
-## BUILD DOCKERFILE
+## CONTAINERIZE BACKEND
+
+### BUILD DOCKERFILE
 
 In Gitpod, installed the docker extension,
 then created a file 'Dockerfile' in the backend directory and placed
