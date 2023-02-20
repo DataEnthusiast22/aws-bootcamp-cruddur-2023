@@ -39,7 +39,7 @@ changed directory up a level (to project home directory) using
 cd ..
 ```
 
-## BUILD A CONTAINER
+### BUILD A CONTAINER
 ran the code below to build a container
 ```
 # this is used to build the dockerimage and tag it 'backend-flask' from the dockerfile './backend-flask'
@@ -54,7 +54,7 @@ the backend-flask docker image built can be found in the docker tab
 
 the command 'docker images' is used to list the available docker images
 
-## RUN CONTAINER
+### RUN CONTAINER
 ran the code 
 ```
 # starts a new container in interactive mode based on the 'backend-flask' image and map port 4567 
