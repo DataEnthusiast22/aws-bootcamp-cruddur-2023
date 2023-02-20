@@ -1,9 +1,12 @@
 # Week 0 — Billing and Architecture
 
+## Conceptual Architecture DIagram
+![WhatsApp Image 2023-02-20 at 09 56 03](https://user-images.githubusercontent.com/113455719/220058938-499f01d6-c220-4b92-a54c-fe7abcd7f01d.jpg)
+
 ## Logical Architecture Diagram
 Recreated the logical architecture diagram using lucid charts
 
-![Cruddur Architectural Diagram](https://user-images.githubusercontent.com/113455719/219932410-ef797b62-00c3-42b5-866e-e7afb2b30a28.png)
+![Cruddur Architectural Diagram](https://user-images.githubusercontent.com/113455719/219933670-c5791459-89fb-4fb8-923d-8a3aa17aaf6b.jpeg)
 
 ## Install AWS cli
 Downloaded and installed AWS cli on gitpod terminal using curl, unzip & sudo
@@ -27,7 +30,7 @@ I blacked out part of the secret_access_key & access_key_id for security reasons
 
 -- updated .gitpod.yml with the code below 
 
-'''
+'''sh
 tasks:
   - name: aws-cli
     env:
