@@ -46,7 +46,8 @@ docker build -t  backend-flask ./backend-flask
 ```
 
 the backend-flask docker image built can be found in the docker tab 
-(INSERT where_is_my_dockerimage picture)
+![where_is_my_dockerimage](https://user-images.githubusercontent.com/113455719/220203576-a227b4ba-7a8e-40a4-92ad-ee778f3a0415.png)
+
 
 the command 'docker images' is used to list the available docker images
 
@@ -73,8 +74,5 @@ different frontend and backend applications simply by changing the values of the
 having to modify the application code.
 
 made the port public by unlocking the port in the ports tab
-
 Note: CTRL+C is used to stop the server after its been spun up.
-
-/api/activities/home
-URL to see results
+add /api/activities/home to your URL to see results
