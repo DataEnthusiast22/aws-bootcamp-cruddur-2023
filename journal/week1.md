@@ -46,8 +46,7 @@ docker build -t  backend-flask ./backend-flask
 ```
 
 the backend-flask docker image built can be found in the docker tab 
-![where_is_my_dockerimage](https://user-images.githubusercontent.com/113455719/220203576-a227b4ba-7a8e-40a4-92ad-ee778f3a0415.png)
-
+![where_is_my_dockerimage](https://user-images.githubusercontent.com/113455719/220203742-3bd63278-9b9a-432e-bf75-10a6f6c0daf6.png)
 
 the command 'docker images' is used to list the available docker images
 
