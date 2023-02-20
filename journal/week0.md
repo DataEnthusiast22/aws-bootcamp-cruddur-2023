@@ -41,7 +41,7 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
-      ```
+```
       
 -- pushed changes made in gitpod to github public repo using git add, git commit and git push
 
