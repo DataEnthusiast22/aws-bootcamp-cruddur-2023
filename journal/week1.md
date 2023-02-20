@@ -4,7 +4,7 @@
 ### BUILD DOCKERFILE
 
 In Gitpod, installed the docker extension,
-then created a file 'Dockerfile' in the backend directory and placed
+then created a file 'Dockerfile' in the backend-flask directory and placed
 the code below in it
 
 ```
