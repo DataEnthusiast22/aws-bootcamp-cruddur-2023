@@ -42,10 +42,10 @@ cd ..
 ### BUILD A CONTAINER
 ran the code below to build a container
 ```
-# this is used to build the dockerimage and tag it 'backend-flask' from the dockerfile './backend-flask'
-
 docker build -t  backend-flask ./backend-flask
 ```
+this code is used to build the dockerimage and tag it 'backend-flask' from the dockerfile './backend-flask'
+
 
 ![where_is_my_dockerimage](https://user-images.githubusercontent.com/113455719/220203742-3bd63278-9b9a-432e-bf75-10a6f6c0daf6.png)
 
@@ -57,15 +57,9 @@ the command 'docker images' is used to list the available docker images
 ### RUN CONTAINER
 ran the code 
 ```
-# starts a new container in interactive mode based on the 'backend-flask' image and map port 4567 
-# on the host machine to port 4567 inside the container. 
-# interactive mode, means you'll be dropped into a shell prompt inside the container to allow run other 
-# commands inside the container or with the running Flask application the cotainer will be removed 
-# automatically once its stopped due to '--rm' in the line of code 
-
 docker run --rm -p 4567:4567 -it backend-flask
 ```
-the code above runs flask without setting the environment variables
+the code above runs flask without setting the environment variables. starts a new container in interactive mode based on the 'backend-flask' image and map port 4567 on the host machine to port 4567 inside the container. interactive mode, means you'll be dropped into a shell prompt inside the container to allow run other commands inside the container or with the running Flask application the cotainer will be removed automatically once its stopped due to '--rm' in the line of code 
 
 the code below to runs flask and sets the environment variables
 
