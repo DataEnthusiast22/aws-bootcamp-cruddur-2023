@@ -70,7 +70,9 @@ a check of my dockerhub public repo confirms the image has been successfully pus
 ![dockerhub_image2](https://user-images.githubusercontent.com/113455719/220939900-725fa2b5-d877-47a8-a29d-67b8548a7dad.png)
 
 
-# CONTAINERIZE BACKEND
+# APP CONTAINERIZATION FOLLOW ALONG
+
+## CONTAINERIZE BACKEND
 
 ### BUILD DOCKERFILE
 
