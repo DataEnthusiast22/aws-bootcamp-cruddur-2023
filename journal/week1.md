@@ -38,30 +38,32 @@ docker login --username=dataenthusiast22
 ```
 ![dockerhub_login_successful](https://user-images.githubusercontent.com/113455719/220939666-ffd12a8e-64c4-458a-9ba6-e00e75fb1a8d.png)
 
-Changed directory to where the Dockerfile I created earlier is located, then built an image from Dockerfile & tagged it using docker build
+Changed directory to where the Dockerfile I created earlier is located, then built an image in the current directory
+from Dockerfile & tagged it using docker build
 
 ```
 docker build -t homeworkweek1 .
 ```
-this builds the homeworkweek1 docker image from the dockerfile in the current directory
 
+show the repository, tag, image ID, creation date & size
 
 ```
 docker images
 ```
-shows the repository, tag, image ID, creation date & size
 
 ![docker_images](https://user-images.githubusercontent.com/113455719/220939820-6c6790d3-98bb-49d9-8403-e85b6e9fe4b4.png)
+
+create a new tag for a Docker image in my public dockerhub repository
 
 ```
 docker tag 6f39a5d141af dataenthusiast22/assignment1:latest
 ```
-this creates a new tag for a Docker image in my public dockerhub repository
+
+push the docker image into my public dockerhub repo
 
 ```
 docker push dataenthusiast22/assignment1:latest
 ```
-this pushes the docker image into my public dockerhub repo
 
 a check of my dockerhub public repo confirms the image has been successfully pushed
 
