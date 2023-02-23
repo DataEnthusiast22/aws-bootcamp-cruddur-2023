@@ -18,7 +18,11 @@ ENV FLASK_ENV=development
 
 EXPOSE ${PORT}
 
-# CMD = command. it is used to run flask app
-# this basically says run flask module using python version 3 listening on host 0.0.0.0 port 4567
+# Copy the external script file to the container
+COPY ext_flask.sh ext_flask.sh
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
+# Set permissions for the script file
+RUN chmod +x ext_flask.sh
+
+# Run the external script instead of the CMD instruction
+CMD ["/bin/bash", "ext_flask.sh"]
