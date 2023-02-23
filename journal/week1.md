@@ -1,4 +1,29 @@
 # Week 1 — App Containerization
+
+## Assignment 1
+
+## Run the dockerfile CMD as an external script
+created /backend-flask/ext_flask.sh with the code
+
+```
+#!/bin/bash
+python3 -m flask run --host=0.0.0.0 --port=4567
+```
+
+changed the CMD command in the ~/backend-flask/Dockerfile to
+
+```
+# Copy the external script file to the container
+COPY ext_flask.sh ext_flask.sh
+
+# Set permissions for the script file
+RUN chmod +x ext_flask.sh
+
+# Run the external script instead of the CMD instruction
+CMD ["/bin/bash", "ext_flask.sh"]
+```
+
+
 ## CONTAINERIZE BACKEND
 
 ### BUILD DOCKERFILE
