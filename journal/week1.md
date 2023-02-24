@@ -73,10 +73,10 @@ a check of my dockerhub public repo confirms the image has been successfully pus
 1. It's important for dockerfiles to create containers that can be stopped & destroyed and then rebuilt & replaced with a minimum set of setup & configuration. This allows for consistent & reproducible builds and prevents the presence of artifacts or dependencies installed during previous builds. 
 2. The use of multistage builds is encouraged as it helps reduce the final image size.
 3. Use dockerfile to decouple apps into multiple containers making it easier to scale horizontally and reuse containers.
-4. Minimize the number of layers (RUN, COPY or ADD creates layers) & use multibuilds while only copying artifacts needed in the final stage.
-5. Whenever possible, use current official images in the FROM instruction as the basis for your images.
+4. Minimize the number of layers (==RUN==, ==COPY== or ==ADD== creates layers) & use multibuilds while only copying artifacts needed in the final stage.
+5. Whenever possible, use current official images in the ==FROM== instruction as the basis for your images.
 6. Split long or cmoplex RUN statement into multiple lines sperated by backlashes.
-7. Always combine 'RUN apt-get update' with 'apt-get install' in the same RUN statement as using 'apt-get update' alone in a RUN statement causes caching issues and the subsequent 'apt-get install' fails. && can be used to combine both.
+7. Always combine ==RUN apt-get update== with ```apt-get install``` in the same RUN statement as using 'apt-get update' alone in a RUN statement causes caching issues and the subsequent 'apt-get install' fails. && can be used to combine both.
 8. CMD should rarely be used in the manner of 'CMD ["param1", "param2", ..] in conjunction with ENTRYPOINT except you are quite familiar with how ENTRYPOINT works.
 9. Use of common traditional ports for your app is encouraged when using the EXPOSE instruction.
 10. Copy files individually if you have multiple dockerfile steps that use different files as this ensures each steps build cache is only invalidated.
