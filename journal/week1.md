@@ -322,3 +322,12 @@ Add code below to gitpod.yml file
       sudo apt update
       sudo apt install -y postgresql-client-13 libpq-dev
   ```
+  
+
+named volume mapping
+
+```
+volumes:
+  db:
+    driver: local
+```
