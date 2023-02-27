@@ -109,6 +109,22 @@ sudo docker pull nginx
 ```
 ![docker_pull_success](https://user-images.githubusercontent.com/113455719/221499845-78f90b0f-a2fb-4f2a-9ead-6aab6c3e361d.png)
 
+## Implement a healthcheck in the V3 Docker compose file
+added the code below to dockercompose.yml 
+I added the following code to dockercompose.yml
+```
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4567/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+```
 ## Some best practices of Dockerfile
 1. It's important for dockerfile to create containers that can be stopped & destroyed and then rebuilt & replaced with a minimum set of setup & configuration. This allows for consistent & reproducible builds and prevents the presence of artifacts or dependencies installed during previous builds. 
 2. The use of multistage builds is encouraged as it helps reduce the final image size.
