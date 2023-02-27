@@ -69,6 +69,46 @@ a check of my dockerhub public repo confirms the image has been successfully pus
 
 ![dockerhub_image2](https://user-images.githubusercontent.com/113455719/220939900-725fa2b5-d877-47a8-a29d-67b8548a7dad.png)
 
+## Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
+
+Created an Amazon Linux EC2 instance
+![ec2_instance](https://user-images.githubusercontent.com/113455719/221499236-3ce7d473-ae1d-4db2-a02e-fd956598ea7e.png)
+
+Logged in using cloudshell and ran the code to update my instance and install docker
+```
+sudo yum update
+sudo yum install docker -y
+```
+used this code to check if docker is installed
+```
+docker --version
+```
+![ec2_docker_installed](https://user-images.githubusercontent.com/113455719/221499539-6e191f96-4e30-4002-851e-51ec04a46720.png)
+
+was initially unable to pull a docker image, as I was getting the error message
+
+'Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?'
+
+checked if it was running using
+
+```
+systemctl status docker.service
+```
+
+![docker_service_disabled](https://user-images.githubusercontent.com/113455719/221499294-681b0227-a986-40f3-9ff2-bef1b3a30a99.png)
+
+started all service and made sure docker is up and running 
+```
+sudo service --status-all 
+sudo service docker start
+```
+
+ran the command to pull a container
+```
+sudo docker pull nginx  
+```
+![docker_pull_success](https://user-images.githubusercontent.com/113455719/221499845-78f90b0f-a2fb-4f2a-9ead-6aab6c3e361d.png)
+
 ## Some best practices of Dockerfile
 1. It's important for dockerfile to create containers that can be stopped & destroyed and then rebuilt & replaced with a minimum set of setup & configuration. This allows for consistent & reproducible builds and prevents the presence of artifacts or dependencies installed during previous builds. 
 2. The use of multistage builds is encouraged as it helps reduce the final image size.
